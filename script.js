@@ -1,6 +1,6 @@
 "use strict";
-const ul = document.querySelector("ul");
 const nav = document.querySelector("nav");
+const ul = document.querySelector("ul");
 const bnt = document.querySelector("button");
 
 const bc = [
