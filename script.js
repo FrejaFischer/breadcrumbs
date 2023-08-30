@@ -8,7 +8,9 @@ const bc = [
   { name: "Vaskemaskiner", link: "/hvidevarer/vaskemaskiner" },
   { name: "Bosch", link: "/hvidevarer/vaskemaskiner/bosch" },
   //   { name: "Bosch 2000", link: "/hvidevarer/vaskemaskiner/bosch/bosch_2000" },
+  //hvis der tilføjes flere items til dette array, bliver de blot tilføjet til breadcrumb-stien. Ligesom hvis man klikkede yderligere ind på en hjemmeside og der derved blev tilføjet flere krummer.
 ];
+
 bnt.addEventListener("click", breadcrumbsGen);
 
 function breadcrumbsGen() {
@@ -39,4 +41,4 @@ function removeBread() {
   bnt.removeEventListener("click", removeBread);
   bnt.addEventListener("click", breadcrumbsGen);
 }
-//    ulPointer.innerHTML += `<li>${each.type}</li>`;
+//removeBread() er blot en funktion, der fjerner stien igen. Bare for sjovt, så der efter der første gang er blevet trykket på knappen ikke er en ubruglig knap og så det hele kan ske igen uden at reloade siden :-)
